@@ -5,13 +5,16 @@ const findNumbers = (nums) => {
   let evenNums = 0;
   // iterate through array
   for(let i = 0; i <= nums.length - 1; i++) {
-    let stringedNum = nums[i].toString();
-    let stringArrayed = stringedNum.split("");
-    if (stringArrayed.length % 2 === 0) {
+    //turn number into string and then into array
+    let stringedNumArrayed = nums[i].toString().split("");
+    //if the length of stringedNumArrayed is even
+    if (stringedNumArrayed.length % 2 === 0) {
+      //add it to evenNums
       evenNums++
     }
   }
   return evenNums
 }
+
 
 
