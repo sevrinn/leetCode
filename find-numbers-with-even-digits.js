@@ -6,7 +6,7 @@ const findNumbers = (nums) => {
   // iterate through array
   for(let i = 0; i <= nums.length - 1; i++) {
     //turn number into string and then into array
-    let stringedNumArrayed = nums[i].toString().split("");
+    let stringedNumArrayed = nums[i].toString().split("")
     //if the length of stringedNumArrayed is even
     if (stringedNumArrayed.length % 2 === 0) {
       //add it to evenNums
